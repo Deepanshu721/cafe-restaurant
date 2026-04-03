@@ -1,34 +1,25 @@
-# Cafe Restaurant
+# Cafe Website Structure
 
-A cafe restaurant management application built to streamline operations and enhance customer experience.
+Starter folder structure for a restaurant or cafe website.
 
-## Features
+## Folders
 
-- Menu management
-- Order processing
-- Customer reservations
-- Inventory tracking
-- Sales reporting
+- `src/pages` - page-level files like Home, Menu, About, Contact
+- `src/components` - reusable UI blocks like Navbar, Hero, Footer
+- `src/assets/images` - source images used during development
+- `src/assets/icons` - icon assets
+- `src/styles` - global and section styles
+- `src/scripts` - frontend JavaScript
+- `public/images` - public static images
+- `public/fonts` - font files
+- `data/menu` - menu content
+- `data/gallery` - gallery content
+- `data/testimonials` - customer review content
+- `docs` - notes, wireframes, brand guide, content plan
 
-## Installation
+## Suggested Next Files
 
-1. Clone the repository
-2. Install dependencies
-3. Configure the environment
-4. Run the application
-
-## Usage
-
-Follow the application guide to manage your cafe operations efficiently.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a pull request.
-
-## License
-
-This project is licensed under the MIT License.
-
-## Support
-
-For support, please open an issue on the repository.
+- `src/pages/index.html`
+- `src/styles/main.css`
+- `src/scripts/main.js`
+- `data/menu/menu.json`

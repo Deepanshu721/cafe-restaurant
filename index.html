@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dilli Brew House</title>
+  <meta
+    name="description"
+    content="Dilli Brew House brings art, music, and food together in a warm Connaught Place setting."
+  >
+  <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body>
+  <header class="site-header" id="home">
+    <div class="topbar shell">
+      <a class="topbar__call" href="tel:+917210800551">Call - +91 7210800551</a>
+      <a class="brand" href="#home" aria-label="Dilli Brew House home">
+        <span class="brand__script">Dilli Brew House</span>
+        <span class="brand__label">CAFE</span>
+      </a>
+      <button class="topbar__cta topbar__cta--button" type="button" data-contact-popup-trigger>Contact Us</button>
+    </div>
+
+    <div class="navbar shell">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+        Menu
+      </button>
+      <nav class="nav" id="site-menu" aria-label="Primary">
+        <a href="#home" data-view-link="home">Home</a>
+        <a href="#story" data-section-link="story">About</a>
+        <a href="#gallery-page" data-view-link="gallery" data-gallery-tab="food">Gallery</a>
+        <a href="#menu-page" data-view-link="menu">Menu</a>
+      </nav>
+    </div>
+
+    <section class="hero shell" data-view="home">
+      <div class="hero__content">
+        <p class="eyebrow">Connaught Place, New Delhi</p>
+        <h1>Welcome to Dilli Brew House!</h1>
+        <p class="hero__copy">
+          Where art, music, and great food come together to create a unique
+          experience
+        </p>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero__frame">
+          <img class="hero__image" src="./public/images/hero/banner1.png" alt="Interior view of Dilli Brew House">
+        </div>
+      </div>
+    </section>
+
+    <section class="page-banner shell" id="contact-page" data-view="contact" hidden>
+      <div class="page-banner__inner">
+        <p class="eyebrow">Contact Us</p>
+        <h1>Contact Us</h1>
+      </div>
+    </section>
+
+    <section class="page-banner shell" id="gallery-page" data-view="gallery" hidden>
+      <div class="page-banner__inner">
+        <p class="eyebrow">Gallery</p>
+        <h1>Gallery</h1>
+      </div>
+    </section>
+
+    <section class="page-banner shell" id="menu-page" data-view="menu" hidden>
+      <div class="page-banner__inner">
+        <p class="eyebrow">Menu</p>
+        <h1>Our Menu</h1>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <div data-view="home">
+      <section class="info-strip shell" aria-label="Cafe details">
+        <article class="info-card">
+          <div class="info-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img">
+              <path d="M12 22s7-6.25 7-12a7 7 0 1 0-14 0c0 5.75 7 12 7 12Zm0-9.5A2.5 2.5 0 1 1 12 7a2.5 2.5 0 0 1 0 5.5Z"/>
+            </svg>
+          </div>
+          <a
+            href="https://maps.app.goo.gl/pu7a5RFcnR9r7Nm6A"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2>Locate Us</h2>
+            <p>C-65 D Block, 1st floor Outer Rd 6</p>
+            <p>Connaught Place New Delhi, 110001</p>
+          </a>
+        </article>
+
+        <article class="info-card">
+          <div class="info-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img">
+              <path d="M12 1.75A10.25 10.25 0 1 0 22.25 12 10.26 10.26 0 0 0 12 1.75Zm0 18.5A8.25 8.25 0 1 1 20.25 12 8.26 8.26 0 0 1 12 20.25Zm.75-13.5h-1.5V12c0 .3.12.58.33.8l3.25 3.25 1.06-1.06-3.14-3.14Z"/>
+            </svg>
+          </div>
+          <div>
+            <h2>Open Hours</h2>
+            <p>Everyday from 11am - 10pm</p>
+          </div>
+        </article>
+
+        <article class="info-card" id="reservation">
+          <div class="info-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img">
+              <path d="M4 3.75A2.25 2.25 0 0 0 1.75 6v12A2.25 2.25 0 0 0 4 20.25h16A2.25 2.25 0 0 0 22.25 18V6A2.25 2.25 0 0 0 20 3.75Zm0 1.5h16c.41 0 .75.34.75.75v12a.75.75 0 0 1-.75.75H4a.75.75 0 0 1-.75-.75V6c0-.41.34-.75.75-.75Zm2.5 2A1.25 1.25 0 1 0 7.75 8.5 1.25 1.25 0 0 0 6.5 7.25Zm0 4A1.25 1.25 0 1 0 7.75 12.5 1.25 1.25 0 0 0 6.5 11.25Zm0 4A1.25 1.25 0 1 0 7.75 16.5 1.25 1.25 0 0 0 6.5 15.25ZM11 8h7v1.5h-7Zm0 4h7v1.5h-7Zm0 4h7v1.5h-7Z"/>
+            </svg>
+          </div>
+          <div>
+            <h2>Reservation</h2>
+            <p><a href="tel:+917210800551">+91 7210800551</a></p>
+          </div>
+        </article>
+      </section>
+
+      <section class="story shell" id="story">
+        <div class="story__media">
+          <img
+            class="story__photo"
+            src="./public/images/story/the-story.jpg"
+            alt="Bar counter and seating area at Dilli Brew House"
+          >
+        </div>
+
+      <div class="story__content">
+        <p class="eyebrow">About Us</p>
+        <h2>About Us</h2>
+          <p>
+            Established in 2015, Dilli Brew House is an eclectic cafe adorned with
+            industrial character, event-led evenings, and a warm dining atmosphere
+            that mirrors the tone of the supplied references.
+          </p>
+          <p>
+            The experience blends cuisine, cocktails, live music, and relaxed
+            social energy, making the space feel equally suited for casual meals,
+            late-night conversations, and celebrations.
+          </p>
+          <blockquote>
+            "Dilli Brew House in CP is the perfect blend of entertainment and
+            cuisine, with live performances, a diverse menu, and a memorable
+            rooftop mood."
+          </blockquote>
+          <div class="story__signature">
+            <strong>Deepanshu Aggarwal</strong>
+            <span class="story__autograph" aria-label="Signature of Deepanshu Aggarwal">Deepanshu Aggarwal</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery shell" id="gallery">
+        <div class="section-heading">
+          <p class="eyebrow">Gallery</p>
+          <h2>Gallery</h2>
+        </div>
+
+        <div class="gallery__grid">
+          <article class="gallery-card gallery-card--link">
+            <a href="#gallery-page" data-view-link="gallery" data-gallery-tab="food">
+            <img
+              class="gallery-card__image gallery-card__image--food"
+              src="./public/images/food/food.jpg"
+              alt="Signature plated food at Dilli Brew House"
+            >
+            <div class="gallery-card__body">
+              <h3>Food</h3>
+            </div>
+            </a>
+          </article>
+
+          <article class="gallery-card gallery-card--link">
+            <a href="#gallery-page" data-view-link="gallery" data-gallery-tab="drink">
+              <img
+                class="gallery-card__image gallery-card__image--drinks"
+                src="./public/images/drinks/drink.jpg"
+                alt="Cocktail drinks served at Dilli Brew House"
+              >
+              <div class="gallery-card__body">
+                <h3>Drinks</h3>
+              </div>
+            </a>
+          </article>
+
+          <article class="gallery-card gallery-card--link">
+            <a href="#gallery-page" data-view-link="gallery" data-gallery-tab="ambience">
+              <img
+                class="gallery-card__image gallery-card__image--ambience"
+                src="./public/images/ambience/Ambience.jpg"
+                alt="Ambience and seating inside Dilli Brew House"
+              >
+              <div class="gallery-card__body">
+                <h3>Ambience</h3>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+
+    </div>
+
+    <section class="menu-section shell" id="menu" data-view="menu" hidden>
+      <div class="menu-intro">
+        <p>
+          Explore a fuller cafe menu built around indulgent small bites,
+          global comfort food, handcrafted beverages, and dessert favorites,
+          presented in the same warm and polished style as the rest of
+          Dilli Brew House.
+        </p>
+      </div>
+
+      <div class="menu-grid">
+        <article class="menu-card">
+          <div class="menu-card__media">
+            <img src="./public/images/food/1685186231179_food_11.jpg" alt="Crispy appetizer platter at Dilli Brew House">
+          </div>
+          <div class="menu-card__body">
+            <p class="menu-card__eyebrow">Cafe Favorites</p>
+            <h3>Snacks</h3>
+            <ul class="menu-list">
+              <li><span>Masala Fries</span><strong>INR 195</strong></li>
+              <li><span>Peri Peri Fries</span><strong>INR 215</strong></li>
+              <li><span>Cheese Garlic Bread</span><strong>INR 245</strong></li>
+              <li><span>Loaded Nachos</span><strong>INR 295</strong></li>
+              <li><span>Paneer Tikka Bites</span><strong>INR 325</strong></li>
+              <li><span>Crispy Corn Pepper Toss</span><strong>INR 275</strong></li>
+              <li><span>Chicken Popcorn</span><strong>INR 325</strong></li>
+              <li><span>Fish Fingers</span><strong>INR 365</strong></li>
+              <li><span>Chilli Cheese Toast</span><strong>INR 255</strong></li>
+              <li><span>House Mezze Platter</span><strong>INR 445</strong></li>
+              <li><span>Classic Veg Platter</span><strong>INR 495</strong></li>
+              <li><span>Classic Non-Veg Platter</span><strong>INR 575</strong></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="menu-card__media">
+            <img src="./public/images/food/1685186176976_food_9.jpg" alt="Signature plated food at Dilli Brew House">
+          </div>
+          <div class="menu-card__body">
+            <p class="menu-card__eyebrow">Wok &amp; Bowls</p>
+            <h3>Chinese</h3>
+            <ul class="menu-list">
+              <li><span>Veg Spring Rolls</span><strong>INR 265</strong></li>
+              <li><span>Honey Chilli Potato</span><strong>INR 285</strong></li>
+              <li><span>Chilli Paneer Dry</span><strong>INR 325</strong></li>
+              <li><span>Crispy Chilli Baby Corn</span><strong>INR 315</strong></li>
+              <li><span>Chicken Lollipop</span><strong>INR 365</strong></li>
+              <li><span>Drums of Heaven</span><strong>INR 395</strong></li>
+              <li><span>Veg Hakka Noodles</span><strong>INR 295</strong></li>
+              <li><span>Chicken Hakka Noodles</span><strong>INR 345</strong></li>
+              <li><span>Schezwan Fried Rice</span><strong>INR 305</strong></li>
+              <li><span>Burnt Garlic Fried Rice</span><strong>INR 315</strong></li>
+              <li><span>Chilli Chicken Gravy</span><strong>INR 385</strong></li>
+              <li><span>Veg Manchurian Gravy</span><strong>INR 325</strong></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="menu-card__media">
+            <img src="./public/images/food/1685186008361_food_2.jpg" alt="Pasta dish served at Dilli Brew House">
+          </div>
+          <div class="menu-card__body">
+            <p class="menu-card__eyebrow">Oven &amp; Pasta</p>
+            <h3>Italian</h3>
+            <ul class="menu-list">
+              <li><span>Margherita Pizza</span><strong>INR 345</strong></li>
+              <li><span>Farmhouse Pizza</span><strong>INR 395</strong></li>
+              <li><span>Spicy Paneer Pizza</span><strong>INR 425</strong></li>
+              <li><span>Pepperoni Chicken Pizza</span><strong>INR 465</strong></li>
+              <li><span>Arrabbiata Penne</span><strong>INR 355</strong></li>
+              <li><span>Alfredo Penne</span><strong>INR 375</strong></li>
+              <li><span>Pink Sauce Pasta</span><strong>INR 385</strong></li>
+              <li><span>Spaghetti Aglio e Olio</span><strong>INR 345</strong></li>
+              <li><span>Lasagna Verde</span><strong>INR 425</strong></li>
+              <li><span>Chicken Lasagna</span><strong>INR 465</strong></li>
+              <li><span>Mushroom Risotto</span><strong>INR 435</strong></li>
+              <li><span>Garlic Herb Cottage Cheese Steak</span><strong>INR 495</strong></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="menu-card__media">
+            <img src="./public/images/food/1685186250338_food_12.jpg" alt="North Indian curry presentation at Dilli Brew House">
+          </div>
+          <div class="menu-card__body">
+            <p class="menu-card__eyebrow">Main Course</p>
+            <h3>North Indian</h3>
+            <ul class="menu-list">
+              <li><span>Dal Makhani</span><strong>INR 325</strong></li>
+              <li><span>Dal Tadka</span><strong>INR 285</strong></li>
+              <li><span>Paneer Butter Masala</span><strong>INR 365</strong></li>
+              <li><span>Kadai Paneer</span><strong>INR 355</strong></li>
+              <li><span>Malai Kofta</span><strong>INR 365</strong></li>
+              <li><span>Veg Jalfrezi</span><strong>INR 335</strong></li>
+              <li><span>Butter Chicken</span><strong>INR 425</strong></li>
+              <li><span>Chicken Tikka Masala</span><strong>INR 445</strong></li>
+              <li><span>Mutton Rogan Josh</span><strong>INR 545</strong></li>
+              <li><span>Jeera Rice</span><strong>INR 225</strong></li>
+              <li><span>Butter Naan</span><strong>INR 75</strong></li>
+              <li><span>Garlic Naan</span><strong>INR 95</strong></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="menu-card__media">
+            <img src="./public/images/food/1685186158597_food_8.jpg" alt="Shared table spread at Dilli Brew House">
+          </div>
+          <div class="menu-card__body">
+            <p class="menu-card__eyebrow">Comfort Meals</p>
+            <h3>Burgers &amp; Sandwiches</h3>
+            <ul class="menu-list">
+              <li><span>Veg Club Sandwich</span><strong>INR 265</strong></li>
+              <li><span>Grilled Cheese Sandwich</span><strong>INR 245</strong></li>
+              <li><span>Paneer Tikka Sandwich</span><strong>INR 295</strong></li>
+              <li><span>Chicken Club Sandwich</span><strong>INR 325</strong></li>
+              <li><span>Classic Veg Burger</span><strong>INR 285</strong></li>
+              <li><span>Cheese Burst Burger</span><strong>INR 315</strong></li>
+              <li><span>Paneer Supreme Burger</span><strong>INR 345</strong></li>
+              <li><span>Crispy Chicken Burger</span><strong>INR 365</strong></li>
+              <li><span>Peri Peri Chicken Burger</span><strong>INR 385</strong></li>
+              <li><span>Loaded Burger &amp; Fries</span><strong>INR 425</strong></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="menu-card__media">
+            <img src="./public/images/drinks/1685186635828_drink_12.jpg" alt="House drink selection at Dilli Brew House">
+          </div>
+          <div class="menu-card__body">
+            <p class="menu-card__eyebrow">Bar &amp; Cafe</p>
+            <h3>Drinks</h3>
+            <ul class="menu-list">
+              <li><span>Virgin Mojito</span><strong>INR 225</strong></li>
+              <li><span>Watermelon Cooler</span><strong>INR 245</strong></li>
+              <li><span>Blue Lagoon</span><strong>INR 255</strong></li>
+              <li><span>Cold Coffee</span><strong>INR 215</strong></li>
+              <li><span>Hazelnut Frappe</span><strong>INR 245</strong></li>
+              <li><span>Classic Cappuccino</span><strong>INR 185</strong></li>
+              <li><span>Iced Americano</span><strong>INR 175</strong></li>
+              <li><span>Masala Lemonade</span><strong>INR 165</strong></li>
+              <li><span>Berry Smoothie</span><strong>INR 265</strong></li>
+              <li><span>Citrus Bloom Spritz</span><strong>INR 425</strong></li>
+              <li><span>Velvet Berry Mix</span><strong>INR 475</strong></li>
+              <li><span>Smoked Ruby Sour</span><strong>INR 525</strong></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="menu-card__media">
+            <img src="./public/images/food/1685186250338_food_12.jpg" alt="Dessert style presentation at Dilli Brew House">
+          </div>
+          <div class="menu-card__body">
+            <p class="menu-card__eyebrow">Sweet Finish</p>
+            <h3>Desserts</h3>
+            <ul class="menu-list">
+              <li><span>Hot Chocolate Brownie</span><strong>INR 245</strong></li>
+              <li><span>Brownie with Ice Cream</span><strong>INR 275</strong></li>
+              <li><span>Classic Tiramisu</span><strong>INR 295</strong></li>
+              <li><span>Blueberry Cheesecake</span><strong>INR 315</strong></li>
+              <li><span>Red Velvet Pastry</span><strong>INR 255</strong></li>
+              <li><span>Chocolate Truffle Pastry</span><strong>INR 245</strong></li>
+              <li><span>Nutella Waffle</span><strong>INR 285</strong></li>
+              <li><span>Banoffee Jar</span><strong>INR 265</strong></li>
+              <li><span>Gulab Jamun Cheesecake</span><strong>INR 325</strong></li>
+              <li><span>Ice Cream Sundae</span><strong>INR 225</strong></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="menu-card__media">
+            <img src="./public/images/drinks/1685186323747_drink_3.jpg" alt="Breakfast beverage at Dilli Brew House">
+          </div>
+          <div class="menu-card__body">
+            <p class="menu-card__eyebrow">All Day Cafe</p>
+            <h3>Breakfast &amp; Brunch</h3>
+            <ul class="menu-list">
+              <li><span>Masala Omelette Toast</span><strong>INR 245</strong></li>
+              <li><span>Cheese Omelette Croissant</span><strong>INR 285</strong></li>
+              <li><span>Avocado Multigrain Toast</span><strong>INR 325</strong></li>
+              <li><span>Pancake Stack with Maple</span><strong>INR 295</strong></li>
+              <li><span>Waffles with Seasonal Fruits</span><strong>INR 315</strong></li>
+              <li><span>Granola Yogurt Bowl</span><strong>INR 255</strong></li>
+              <li><span>Poha Bowl</span><strong>INR 195</strong></li>
+              <li><span>Stuffed Paratha Platter</span><strong>INR 245</strong></li>
+              <li><span>English Breakfast Plate</span><strong>INR 365</strong></li>
+              <li><span>Fresh Juice of the Day</span><strong>INR 185</strong></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <div class="menu-section__footer">
+        <a class="menu-section__cta" href="#gallery-page" data-view-link="gallery" data-gallery-tab="food">Explore Food Gallery</a>
+      </div>
+    </section>
+
+    <section class="gallery-view shell" data-view="gallery" hidden>
+      <div class="gallery-tabs" role="tablist" aria-label="Gallery categories">
+        <button class="gallery-tab is-active" type="button" data-gallery-filter="food" aria-selected="true">Food</button>
+        <button class="gallery-tab" type="button" data-gallery-filter="drink" aria-selected="false">Drinks</button>
+        <button class="gallery-tab" type="button" data-gallery-filter="ambience" aria-selected="false">Ambience</button>
+      </div>
+
+      <div class="gallery-panel is-active" data-gallery-panel="food">
+        <div class="gallery-masonry">
+          <img class="gallery-masonry__item gallery-masonry__item--food-a" src="./public/images/food/1685186250338_food_12.jpg" alt="Butter curry served with rice">
+          <img class="gallery-masonry__item gallery-masonry__item--food-b" src="./public/images/food/1685186008361_food_2.jpg" alt="Pasta dish with toasted bread">
+          <img class="gallery-masonry__item gallery-masonry__item--food-c" src="./public/images/food/1685186080379_food_4.jpg" alt="Fresh salad plated at Dilli Brew House">
+          <img class="gallery-masonry__item gallery-masonry__item--food-d" src="./public/images/food/1685186140184_food_7.jpg" alt="Grilled dish served on a stone plate">
+          <img class="gallery-masonry__item gallery-masonry__item--food-e" src="./public/images/food/1685186158597_food_8.jpg" alt="Table spread with signature starters">
+          <img class="gallery-masonry__item gallery-masonry__item--food-f" src="./public/images/food/1685186176976_food_9.jpg" alt="Signature plated food at Dilli Brew House">
+          <img class="gallery-masonry__item gallery-masonry__item--food-g" src="./public/images/food/1685186211970_food_10.jpg" alt="Burger and fries at Dilli Brew House">
+          <img class="gallery-masonry__item gallery-masonry__item--food-h" src="./public/images/food/1685186231179_food_11.jpg" alt="Crispy bites with dipping sauce">
+          <img class="gallery-masonry__item gallery-masonry__item--food-i" src="./public/images/food/1685186122020_food_6.jpg" alt="Chef presenting a plated dish">
+        </div>
+      </div>
+
+      <div class="gallery-panel" data-gallery-panel="drink" hidden>
+        <div class="gallery-masonry">
+          <img class="gallery-masonry__item gallery-masonry__item--drink-a" src="./public/images/drinks/1685186323747_drink_3.jpg" alt="Clear gin cocktail with citrus garnish">
+          <img class="gallery-masonry__item gallery-masonry__item--drink-b" src="./public/images/drinks/1685186301744_drink_2.jpg" alt="Assorted signature cocktails on a marble table">
+          <img class="gallery-masonry__item gallery-masonry__item--drink-c" src="./public/images/drinks/1685186354927_drink_4.jpg" alt="Red cocktail served in a stemmed glass">
+          <img class="gallery-masonry__item gallery-masonry__item--drink-d" src="./public/images/drinks/1685186472125_drink_7.jpg" alt="Cocktail trio served at the bar">
+          <img class="gallery-masonry__item gallery-masonry__item--drink-e" src="./public/images/drinks/1685186601280_drink_10.jpg" alt="Smoked pink cocktail presentation">
+          <img class="gallery-masonry__item gallery-masonry__item--drink-f" src="./public/images/drinks/1685186635828_drink_12.jpg" alt="Coffee cocktail with citrus peel">
+        </div>
+      </div>
+
+      <div class="gallery-panel" data-gallery-panel="ambience" hidden>
+        <div class="gallery-masonry">
+          <img class="gallery-masonry__item gallery-masonry__item--ambience-a" src="./public/images/ambience/1685186659468_ambience_1.jpg" alt="Main lounge seating area at Dilli Brew House">
+          <img class="gallery-masonry__item gallery-masonry__item--ambience-b" src="./public/images/ambience/1720013647774_send_1.png" alt="Velvet seating and chandeliers inside Dilli Brew House">
+          <img class="gallery-masonry__item gallery-masonry__item--ambience-c" src="./public/images/ambience/1720013675463_send_2.png" alt="Green wall and booth seating at Dilli Brew House">
+          <img class="gallery-masonry__item gallery-masonry__item--ambience-d" src="./public/images/ambience/1720098526970_send_4.png" alt="Window-side seating at Dilli Brew House">
+          <img class="gallery-masonry__item gallery-masonry__item--ambience-e" src="./public/images/ambience/1720098576592_send_5.png" alt="Long dining row with hanging decor at Dilli Brew House">
+          <img class="gallery-masonry__item gallery-masonry__item--ambience-f" src="./public/images/ambience/1720098611107_send3.png" alt="Table setup and ambient seating at Dilli Brew House">
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-view shell" data-view="contact" hidden>
+      <div class="contact-layout">
+        <article class="contact-card">
+          <h2>Contact Information</h2>
+          <p class="contact-card__lead">Hello! Let's get in touch</p>
+
+          <div class="contact-item">
+            <div class="contact-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img">
+                <path d="M12 22s7-6.25 7-12a7 7 0 1 0-14 0c0 5.75 7 12 7 12Zm0-9.5A2.5 2.5 0 1 1 12 7a2.5 2.5 0 0 1 0 5.5Z"/>
+              </svg>
+            </div>
+            <a
+              href="https://maps.app.goo.gl/pu7a5RFcnR9r7Nm6A"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              C-65 D Block, 1st floor Outer Rd 6 Connaught Place New Delhi, 110001
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img">
+                <path d="M3.75 5.5A1.75 1.75 0 0 1 5.5 3.75h13A1.75 1.75 0 0 1 20.25 5.5v13a1.75 1.75 0 0 1-1.75 1.75h-13A1.75 1.75 0 0 1 3.75 18.5Zm1.5.23V18.5a.25.25 0 0 0 .25.25h13a.25.25 0 0 0 .25-.25V5.73l-6.2 5.12a1.75 1.75 0 0 1-2.1 0Zm12.82-.48H5.93l5.58 4.6a.25.25 0 0 0 .32 0Z"/>
+              </svg>
+            </div>
+            <a href="mailto:dillibrewhouse@gmail.com">dillibrewhouse@gmail.com</a>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img">
+                <path d="M6.56 2.75A1.81 1.81 0 0 0 4.8 4.17l-.53 2.46a2.56 2.56 0 0 0 .74 2.35l2.07 2.01a16.83 16.83 0 0 0 5.93 5.93l2.01 2.07a2.56 2.56 0 0 0 2.35.74l2.46-.53a1.81 1.81 0 0 0 1.42-1.76v-2.57a1.8 1.8 0 0 0-1.53-1.79l-3.02-.43a1.81 1.81 0 0 0-1.67.62l-1.1 1.1a13.49 13.49 0 0 1-4.74-4.74l1.1-1.1a1.81 1.81 0 0 0 .62-1.67l-.43-3.02A1.8 1.8 0 0 0 9.13 2.75Z"/>
+              </svg>
+            </div>
+            <a href="tel:+917210800551">+91 7210800551</a>
+          </div>
+
+          <div class="contact-socials" aria-label="Social media links">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" role="img">
+                <path d="M7 2.75h10A4.25 4.25 0 0 1 21.25 7v10A4.25 4.25 0 0 1 17 21.25H7A4.25 4.25 0 0 1 2.75 17V7A4.25 4.25 0 0 1 7 2.75Zm0 1.5A2.75 2.75 0 0 0 4.25 7v10A2.75 2.75 0 0 0 7 19.75h10A2.75 2.75 0 0 0 19.75 17V7A2.75 2.75 0 0 0 17 4.25Zm10.13 1.12a.88.88 0 1 1-.88.88.88.88 0 0 1 .88-.88ZM12 7.25A4.75 4.75 0 1 1 7.25 12 4.75 4.75 0 0 1 12 7.25Zm0 1.5A3.25 3.25 0 1 0 15.25 12 3.25 3.25 0 0 0 12 8.75Z"/>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" role="img">
+                <path d="M13.5 21.25v-7h2.38l.37-2.75H13.5V9.75c0-.8.23-1.34 1.37-1.34h1.47V5.94a18 18 0 0 0-2.15-.11c-2.13 0-3.59 1.3-3.59 3.68v2H8.25v2.75h2.35v7Z"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <section class="contact-form-wrap">
+          <p class="eyebrow">Mail Us</p>
+          <h2>Have a Question?</h2>
+          <form
+            class="contact-form"
+            id="contact-form"
+            data-recipient="deepanshu.agg02@gmail.com"
+            novalidate
+          >
+            <div class="contact-form__row">
+              <input type="text" name="name" placeholder="Name" aria-label="Name" maxlength="80" required>
+              <input type="email" name="email" placeholder="Email" aria-label="Email" maxlength="120" required>
+            </div>
+            <input type="tel" name="phone" placeholder="Phone" aria-label="Phone" inputmode="tel" maxlength="20" required>
+            <textarea name="message" rows="7" placeholder="Message" aria-label="Message" maxlength="1500" required></textarea>
+            <input class="contact-form__trap" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button type="submit" class="contact-form__submit">Send</button>
+            <p class="contact-form__status" id="contact-form-status" aria-live="polite"></p>
+          </form>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <div
+    class="contact-popup"
+    id="contact-popup"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="contact-popup-title"
+    hidden
+  >
+    <div class="contact-popup__backdrop" data-contact-popup-close></div>
+    <div class="contact-popup__panel">
+      <button class="contact-popup__close" type="button" aria-label="Close contact popup" data-contact-popup-close>
+        &times;
+      </button>
+      <p class="eyebrow">Contact Us</p>
+      <div class="contact-popup__brand" id="contact-popup-title" aria-label="Dilli Brew House Cafe">
+        <span class="brand__script">Dilli Brew House</span>
+        <span class="brand__label">CAFE</span>
+      </div>
+
+      <div class="contact-popup__list">
+        <div class="contact-popup__item contact-popup__item--address">
+          <div class="contact-popup__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img">
+              <path d="M12 22s7-6.25 7-12a7 7 0 1 0-14 0c0 5.75 7 12 7 12Zm0-9.5A2.5 2.5 0 1 1 12 7a2.5 2.5 0 0 1 0 5.5Z"/>
+            </svg>
+          </div>
+          <a href="https://maps.app.goo.gl/pu7a5RFcnR9r7Nm6A" target="_blank" rel="noopener noreferrer">
+            C-65 D Block, 1st floor Outer Rd 6<br>
+            Connaught Place New Delhi, 110001
+          </a>
+        </div>
+
+        <div class="contact-popup__row">
+          <div class="contact-popup__item contact-popup__item--compact">
+            <div class="contact-popup__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img">
+                <path d="M3.75 5.5A1.75 1.75 0 0 1 5.5 3.75h13A1.75 1.75 0 0 1 20.25 5.5v13a1.75 1.75 0 0 1-1.75 1.75h-13A1.75 1.75 0 0 1 3.75 18.5Zm1.5.23V18.5a.25.25 0 0 0 .25.25h13a.25.25 0 0 0 .25-.25V5.73l-6.2 5.12a1.75 1.75 0 0 1-2.1 0Zm12.82-.48H5.93l5.58 4.6a.25.25 0 0 0 .32 0Z"/>
+              </svg>
+            </div>
+            <a href="mailto:dillibrewhouse@gmail.com">dillibrewhouse@gmail.com</a>
+          </div>
+
+          <div class="contact-popup__item contact-popup__item--compact">
+            <div class="contact-popup__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img">
+                <path d="M6.56 2.75A1.81 1.81 0 0 0 4.8 4.17l-.53 2.46a2.56 2.56 0 0 0 .74 2.35l2.07 2.01a16.83 16.83 0 0 0 5.93 5.93l2.01 2.07a2.56 2.56 0 0 0 2.35.74l2.46-.53a1.81 1.81 0 0 0 1.42-1.76v-2.57a1.8 1.8 0 0 0-1.53-1.79l-3.02-.43a1.81 1.81 0 0 0-1.67.62l-1.1 1.1a13.49 13.49 0 0 1-4.74-4.74l1.1-1.1a1.81 1.81 0 0 0 .62-1.67l-.43-3.02A1.8 1.8 0 0 0 9.13 2.75Z"/>
+              </svg>
+            </div>
+            <a href="tel:+917210800551">+91 7210800551</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="form-toast" role="status" aria-live="polite" hidden></div>
+
+  <footer class="site-footer" id="contact">
+    <div class="site-footer__main shell">
+      <section class="footer-panel">
+        <p class="eyebrow">Contact</p>
+        <div class="footer-contact-list">
+          <div class="footer-contact-item">
+            <div class="footer-contact-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img">
+                <path d="M12 22s7-6.25 7-12a7 7 0 1 0-14 0c0 5.75 7 12 7 12Zm0-9.5A2.5 2.5 0 1 1 12 7a2.5 2.5 0 0 1 0 5.5Z"/>
+              </svg>
+            </div>
+            <address>
+              <a
+                href="https://maps.app.goo.gl/pu7a5RFcnR9r7Nm6A"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                C-65 D Block, 1st floor Outer Rd 6<br>
+                Connaught Place New Delhi, 110001
+              </a>
+            </address>
+          </div>
+
+          <div class="footer-contact-item">
+            <div class="footer-contact-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img">
+                <path d="M3.75 5.5A1.75 1.75 0 0 1 5.5 3.75h13A1.75 1.75 0 0 1 20.25 5.5v13a1.75 1.75 0 0 1-1.75 1.75h-13A1.75 1.75 0 0 1 3.75 18.5Zm1.5.23V18.5a.25.25 0 0 0 .25.25h13a.25.25 0 0 0 .25-.25V5.73l-6.2 5.12a1.75 1.75 0 0 1-2.1 0Zm12.82-.48H5.93l5.58 4.6a.25.25 0 0 0 .32 0Z"/>
+              </svg>
+            </div>
+            <a href="mailto:dillibrewhouse@gmail.com">dillibrewhouse@gmail.com</a>
+          </div>
+
+          <div class="footer-contact-item">
+            <div class="footer-contact-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img">
+                <path d="M6.56 2.75A1.81 1.81 0 0 0 4.8 4.17l-.53 2.46a2.56 2.56 0 0 0 .74 2.35l2.07 2.01a16.83 16.83 0 0 0 5.93 5.93l2.01 2.07a2.56 2.56 0 0 0 2.35.74l2.46-.53a1.81 1.81 0 0 0 1.42-1.76v-2.57a1.8 1.8 0 0 0-1.53-1.79l-3.02-.43a1.81 1.81 0 0 0-1.67.62l-1.1 1.1a13.49 13.49 0 0 1-4.74-4.74l1.1-1.1a1.81 1.81 0 0 0 .62-1.67l-.43-3.02A1.8 1.8 0 0 0 9.13 2.75Z"/>
+              </svg>
+            </div>
+            <a href="tel:+917210800551">+91 7210800551</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer-panel footer-panel--center">
+        <a class="brand brand--footer" href="#home" aria-label="Dilli Brew House home">
+          <span class="brand__script">Dilli Brew House</span>
+          <span class="brand__label">CAFE</span>
+        </a>
+        <div class="socials" aria-label="Social media links">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" role="img">
+              <path d="M7 2.75h10A4.25 4.25 0 0 1 21.25 7v10A4.25 4.25 0 0 1 17 21.25H7A4.25 4.25 0 0 1 2.75 17V7A4.25 4.25 0 0 1 7 2.75Zm0 1.5A2.75 2.75 0 0 0 4.25 7v10A2.75 2.75 0 0 0 7 19.75h10A2.75 2.75 0 0 0 19.75 17V7A2.75 2.75 0 0 0 17 4.25Zm10.13 1.12a.88.88 0 1 1-.88.88.88.88 0 0 1 .88-.88ZM12 7.25A4.75 4.75 0 1 1 7.25 12 4.75 4.75 0 0 1 12 7.25Zm0 1.5A3.25 3.25 0 1 0 15.25 12 3.25 3.25 0 0 0 12 8.75Z"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" role="img">
+              <path d="M13.5 21.25v-7h2.38l.37-2.75H13.5V9.75c0-.8.23-1.34 1.37-1.34h1.47V5.94a18 18 0 0 0-2.15-.11c-2.13 0-3.59 1.3-3.59 3.68v2H8.25v2.75h2.35v7Z"/>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="footer-panel footer-panel--right">
+        <div class="timing">
+          <p class="eyebrow">Timing</p>
+          <p><span>Mon - Fri:</span> 11am - 10pm</p>
+          <p><span>Sat - Sun:</span> 11am - 10pm</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="site-footer__bottom shell">
+      <p>Copyright &copy; <span id="year"></span> Dilli Brew House | All Rights Reserved</p>
+      <div class="footer-links">
+        <a href="#">Terms &amp; Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./src/scripts/main.js"></script>
+</body>
+</html>
