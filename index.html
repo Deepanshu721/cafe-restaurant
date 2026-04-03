@@ -13,18 +13,20 @@
 <body>
   <header class="site-header" id="home">
     <div class="topbar shell">
-      <a class="topbar__call" href="tel:+917210800551">Call - +91 7210800551</a>
       <a class="brand" href="#home" aria-label="Dilli Brew House home">
         <span class="brand__script">Dilli Brew House</span>
         <span class="brand__label">CAFE</span>
       </a>
+      <a class="topbar__call" href="tel:+917210800551">Call - +91 7210800551</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open navigation">
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+      </button>
       <button class="topbar__cta topbar__cta--button" type="button" data-contact-popup-trigger>Contact Us</button>
     </div>
 
     <div class="navbar shell">
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
-        Menu
-      </button>
       <nav class="nav" id="site-menu" aria-label="Primary">
         <a href="#home" data-view-link="home">Home</a>
         <a href="#story" data-section-link="story">About</a>

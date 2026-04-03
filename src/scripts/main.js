@@ -1,5 +1,6 @@
 const menuToggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".nav");
+const siteHeader = document.querySelector(".site-header");
 const yearNode = document.querySelector("#year");
 const viewLinks = document.querySelectorAll("[data-view-link]");
 const sectionLinks = document.querySelectorAll("[data-section-link]");
@@ -96,6 +97,16 @@ const closeContactPopup = () => {
   contactPopupTimer = window.setTimeout(() => {
     contactPopup.hidden = true;
   }, 320);
+};
+
+const closeMobileHeader = () => {
+  if (!menuToggle || !nav || !siteHeader) {
+    return;
+  }
+
+  nav.classList.remove("is-open");
+  siteHeader.classList.remove("is-expanded");
+  menuToggle.setAttribute("aria-expanded", "false");
 };
 
 const clearFieldErrors = (form) => {
@@ -230,6 +241,9 @@ const submitContactForm = async (form) => {
 if (menuToggle && nav) {
   menuToggle.addEventListener("click", () => {
     const isOpen = nav.classList.toggle("is-open");
+    if (siteHeader) {
+      siteHeader.classList.toggle("is-expanded", isOpen);
+    }
     menuToggle.setAttribute("aria-expanded", String(isOpen));
   });
 }
@@ -264,6 +278,7 @@ viewLinks.forEach((link) => {
     if (viewName === "gallery") {
       setGalleryTab(link.getAttribute("data-gallery-tab") || "food");
     }
+    closeMobileHeader();
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
@@ -271,6 +286,7 @@ viewLinks.forEach((link) => {
 sectionLinks.forEach((link) => {
   link.addEventListener("click", () => {
     setView("home");
+    closeMobileHeader();
   });
 });
 
